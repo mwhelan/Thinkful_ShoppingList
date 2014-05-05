@@ -29,6 +29,11 @@ $(document).ready(function() {
 		else
 			item.removeClass("completed"); 
 	});
+
+	/* add sorting to list */
+	$("#list").sortable({   
+		placeholder: "ui-sortable-placeholder" 
+    });  
 });
 
 function addItem() {
@@ -43,7 +48,7 @@ function addItem() {
 }
 
 function createListItem(newItem) {
-	var listItem = "<li><input type='checkbox'>"; 
+	var listItem = "<li class='ui-state-default'><input type='checkbox'>"; 
 	listItem += "<span>" + newItem + "</span>";
 	listItem += "<a href='#'>remove</a></li>";
 	return listItem; 
