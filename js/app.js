@@ -45,6 +45,6 @@ function addItem() {
 function createListItem(newItem) {
 	var listItem = "<li><input type='checkbox'>"; 
 	listItem += "<span>" + newItem + "</span>";
-	listItem += "<a href='#'>Remove</a></li>";
+	listItem += "<a href='#'>remove</a></li>";
 	return listItem; 
 }
