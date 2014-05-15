@@ -38,8 +38,9 @@ $(document).ready(function() {
 
 function addItem() {
 	var newItem = $("#newItemTextBox").val();
-	if(newItem.length === 0) {
+	if(newItem.trim().length === 0) {
 		alert("You must enter an item to be added.");
+        return;
 	}
 
 	var listItem = createListItem(newItem);
